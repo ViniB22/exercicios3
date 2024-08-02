@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js" defer></script>
+    <title>Menu</title>
+</head>
+<body>
+    <div class="container">
+        <hr>
+        <h1>Exercicios</h1>
+        <hr>
+        <button onclick="location.href='../index.html'">Voltar</button>
+        <hr>
+    </div>
+    <!-- Primeiros 5 exercicios -->
+    <div class="megacontainer">
+        <!-- verificar voto por idade -->
+        <div class="grandcontainer">
+            <div class="container">
+                <hr>
+                <h2>Verificação de voto</h2>
+                <hr>
+                <label for="nome">Digite seu nome: </label><br>
+                <input type="text" id="nome" placeholder="nome"><br><br>
+        
+                <label for="idade">Digite sua idade: </label><br>
+                <input type="number" id="idade" placeholder="idade"><br><br>
+
+                <button onclick="verificar()">Verificar</button>
+                <hr>
+            </div>
+            <div class="container">
+                <hr>
+                <h2>Resposta</h2>
+                <hr>
+                <div id="res2"></div>
+                <hr>
+            </div>
+        </div>
+        <!-- Hortifruti -->
+        <div class="grandcontainer">
+            <div class="container">
+                <hr>
+                <h2>Hortifruti</h2>
+                <hr>
+                <h3>Digite a quantidade</h3>
+                <label for="tomate">Tomate -> R$ 5,35</label>
+                <input class="smallinput" type="number" id="tomate"><br><br>
+                <label for="cebola">Cebola -> R$ 3,32</label>
+                <input class="smallinput" type="number" id="cebola"><br><br>
+                <label for="aipim">Aipim -> R$2,87</label>
+                <input class="smallinput" type="number" id="aipim"><br><br>
+                <label for="batata">Batata inglesa -> R$ 4,43</label>
+                <input class="smallinput" type="number" id="batata"><br><br>
+                <label for="cenoura">Cenoura -> R$ 3,59</label>
+                <input class="smallinput" type="number" id="cenoura"><br><br>
+                <label for="chuchu">Chuchu -> R$ 1,79</label>
+                <input class="smallinput" type="number" id="chuchu"><br><br>
+                <button onclick="calcular()">Calcular</button>
+                <hr>
+            </div>
+            <div class="container">
+                <hr>
+                <h2>Resposta</h2>
+                <hr>
+                <div id="res3"></div>
+                <hr>
+            </div>
+        </div>
+        <!-- A para adição, S para subtração, M para multiplicação e D para divisão. -->
+        <div class="grandcontainer">
+            <div class="container">
+                <hr>
+                <h2>Operações Aritméticas</h2>
+                <hr>
+                <label for="num1">Digite um número</label><br>
+                <input type="number" id="num1" placeholder="número"><br><br>
+                <label for="num2">Digite outro número</label><br>
+                <input type="number" id="num2" placeholder="número"><br><br>
+                <label for="funcao">Escolha uma opção</label>
+                <select name="oparation" id="oparation">
+                    <option value="A">adição</option>
+                    <option value="S">subtração</option>
+                    <option value="M">multiplicação</option>
+                    <option value="D">divisão</option>
+                </select><br><br>   
+
+                <button onclick="calcular()">Realizar</button>
+                <hr>
+            </div>
+            <div class="container">
+                <hr>
+                <h2>Resposta</h2>
+                <hr>
+                <div id="res4"></div>
+                <hr>
+            </div>
+        </div>
+        <!-- ler três valores inteiros e escrever na tela o maior e o menor deles -->
+        <div class="grandcontainer">  
+            <div class="container">  
+                <hr>  
+                <h2>maior e menor</h2>  
+                <label for="nume1">Digite o primeiro número:</label><br>  
+                <input type="number" id="nume1"><br>  
+                <label for="nume2">Digite o segundo número:</label><br>  
+                <input type="number" id="nume2"><br>  
+                <label for="nume3">Digite o terceiro número:</label><br>  
+                <input type="number" id="nume3"><br><br>  
+                <button onclick="encontrarMaiorEMenor()">Encontrar</button>  
+                <hr>  
+            </div>  
+            <div class="container">  
+                <hr>  
+                <h2>Resposta</h2>  
+                <hr>  
+                <div id="res5"></div>  
+                <hr>  
+            </div>  
+        </div>  
+    </div>
+    <!-- Últimos 5 exercicios -->
+    <div class="megacontainer">
+        <!-- O custo ao consumidor de um carro novo -->
+        <div class="grandcontainer">
+            <div class="container">
+                <hr>
+                <h2>Concessionária</h2>
+                <hr>
+                <label for="custoFabrica">Custo de fábrica:</label><br>
+                <input type="number" id="custoFabrica"><br>
+                <label for="perDistri">Percentual do distribuidor:</label><br>
+                <input type="number" id="perDistri"><br><br>
+                <button onclick="calcularPreco()">Calcular</button>
+                <hr>
+            </div>
+            <div class="container">
+                <hr>
+                <h2>Resposta</h2>
+                <hr>
+                <div id="res6">
+                </div>
+                <hr>
+            </div>
+        </div>
+        <!-- Um brechó para revender os produtos usados -->
+        <div class="grandcontainer">
+            <div class="container">
+                <hr>
+                <h2>Brechó</h2>
+                <hr>
+                <label for="precoAquisiçao">Preço de aquisição (R$):</label><br>
+                <input type="number" id="precoAquisiçao" step="0.01"><br><br>
+                <button onclick="calcularPreco()">Calcular</button>
+                <hr>
+            </div>
+            <div class="container">
+                <hr>
+                <h2>Resposta</h2>
+                <hr>
+                <div id="res7">
+                </div>
+                <hr>
+            </div>
+        </div>
+        <!-- operadora de telefonia móvel -->
+        <div class="grandcontainer">
+            <div class="container">
+                <hr>
+                <h2>Operadora</h2>
+                <hr>
+                <label for="numMensagens">Número de mensagens enviadas:</label><br>
+                <input type="number" id="numMensagens" min="0"><br><br>
+                <button onclick="calcularCusto()">Calcular</button>
+                <hr>
+            </div>
+            <div class="container">
+                <hr>
+                <h2>Resposta</h2>
+                <hr>
+                <div id="res8">
+                </div>
+                <hr>
+            </div>
+        </div>
+        <!-- Um vendedor ao final do mês, -->
+        <div class="grandcontainer">
+            <div class="container">
+                <hr>
+                <h2>Comissão</h2>
+                <hr>
+                <label for="vendas">Valor total das vendas: R$</label><br>
+                <input type="number" id="vendas"><br><br>
+                <button onclick="calcularSalario()">Calcular</button>
+                <hr>
+            </div>
+            <div class="container">
+                <hr>
+                <h2>Resposta</h2>
+                <hr>
+                <div id="res9">
+                </div>
+                <hr>
+            </div>
+        </div>
+        <!-- Um posto está vendendo combustível -->
+        <div class="grandcontainer">
+            <div class="container">
+                <hr>
+                <h2>Posto de gasolina</h2>
+                <hr>
+                <label for="tipoCombustivel">Tipo de Combustível (G - Gasolina, A - Álcool): </label><br>
+                <input type="text" id="tipoCombustivel"><br>
+                <label for="litros">Quantidade de Litros: </label><br>
+                <input type="number" id="litros"><br>
+                <label for="precoLitro">Preço por Litro: R$</label><br>
+                <input type="number" id="precoLitro"><br><br>
+                <button onclick="calcularValor()">Calcular Valor</button> 
+                <hr>
+            </div>
+            <div class="container">
+                <hr>
+                <h2>Resposta</h2>
+                <hr>
+                <div id="res10"></div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js" defer></script>
+    <title>Menu</title>
+</head>
+<body>
+    <div class="container">
+        <hr>
+        <h1>Exercicios</h1>
+        <hr>
+        <button onclick="location.href='../index.html'">Voltar</button>
+        <hr>
+    </div>
+    <div class="megacontainer">
+        <!--  -->
+        <div class="grandcontainer">
+            <div class="container">
+                <hr>
+                <h2>Área Pirâmide Quadrada</h2>
+                <hr>
+                <label for="ladoQ">Comprimento do lado da base: </label><br>
+                <input type="number" id="ladoQ"><br><br>
+                <button onclick="calcularAreaQ()">Calcular</button>
+                <hr>
+            </div>
+            <div class="container">
+                <hr>
+                <h2>Resposta</h2>
+                <hr>
+                <div id="res1"></div>
+                <hr>
+            </div>
+        </div>
+        <!--  -->
+        <div class="grandcontainer">
+            <div class="container">
+                <hr>
+                <h2>Área Pirâmide Triângular</h2>
+                <hr>
+                <label for="base">Comprimento da base do triângulo: </label><br>
+                <input type="number" id="base"><br>
+                <label for="alturaTriangulo">Altura do triângulo: </label><br>
+                <input type="number" id="alturaTriangulo"><br><br>
+                <button onclick="calcularAreaT()">Calcular</button>
+                <hr>
+            </div>
+            <div class="container">
+                <hr>
+                <h2>Resposta</h2>
+                <hr>
+                <div id="res2"></div>
+                <hr>
+            </div>
+        </div>
+        <!--  -->
+        <div class="grandcontainer">
+            <div class="container">
+                <hr>
+                <h2>Volume de Produção Detergente</h2>
+                <hr>
+                <label for="raio">Raio do frasco (cm): </label><br>
+                <input type="number" id="raio" value="2.5"><br>      
+                <label for="altura">Altura do frasco (cm): </label><br>
+                <input type="number" id="altura" value="22"><br>            
+                <label for="frascosPorHora">Frascos produzidos por hora: </label><br>
+                <input type="number" id="frascosPorHora" value="55"><br>            
+                <label for="horasPorDia">Horas de produção por dia: </label><br>
+                <input type="number" id="horasPorDia" value="16"><br>            
+                <label for="dias">Dias de produção no mês: </label><br>
+                <input type="number" id="dias" value="30"><br><br>
+                <button onclick="calcularVolume()">Calcular</button>
+            </div>
+            <div class="container">
+                <hr>
+                <h2>Resposta</h2>
+                <hr>
+                <div id="res3"></div>
+                <hr>
+            </div>
+        </div>
+        <!--  -->
+        <div class="grandcontainer">
+            <div class="container">
+                <hr>
+                <h2>Cálculo de Receita</h2>
+                <hr>
+                <form id="form">
+                    <label for="peso">Digite os pesos das refeições (em kg), separados por vírgula:</label><br>
+                    <input type="text" id="pesos" required><br>
+                    <button type="button" onclick="calcular()">Calcular</button><br>
+                </form>
+                <hr>
+            </div>
+            <div class="container">
+                <hr>
+                <h2>Resposta</h2>
+                <hr>
+                <table id="resultado">
+                    <tr>
+                        <th>Item</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>Média de peso por refeição</td>
+                        <td id="mediaPeso"></td>
+                    </tr>
+                    <tr>
+                        <td>Receita estimada em 3 horas</td>
+                        <td id="receita3h"></td>
+                    </tr>
+                    <tr>
+                        <td>Receita estimada no mês</td>
+                        <td id="receitaMes"></td>
+                    </tr>
+                    <tr>
+                        <td>Peso total vendido no mês</td>
+                        <td id="pesoTotalMes"></td>
+                    </tr>
+                </table>
+                <hr>
+            </div>
+        </div>
+        <!--  -->
+        <div class="grandcontainer">  
+            <div class="container">  
+                <hr>  
+                <h2>Fahrenheit para Celsius</h2>  
+                <hr>
+                <label for="fahrenheit">Digite a temperatura em Fahrenheit:</label><br>
+                <input type="number" id="fahrenheit"><br><br>
+                <button onclick="converter()">Converter</button> 
+                <hr>  
+            </div>  
+            <div class="container">  
+                <hr>  
+                <h2>Resposta</h2>  
+                <hr>  
+                <div id="res5"></div>  
+                <hr>  
+            </div>  
+        </div>  
+    </div>
+</body>
+</html>
